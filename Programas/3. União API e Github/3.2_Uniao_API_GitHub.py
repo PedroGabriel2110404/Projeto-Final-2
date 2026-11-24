@@ -76,9 +76,7 @@ def validar_chaves_unicas(df, chaves, descricao):
         raise ValueError(f"{descricao}: chaves duplicadas {chaves}")
 
 
-# ==================================================================
 # 1. CARREGAR AS DUAS FONTES JA PROCESSADAS
-# ==================================================================
 api_bruta = spark.table("resultado_completo")
 historico = spark.table("stg_resultados_historicos_extra")
 
@@ -106,7 +104,6 @@ api = (
         F.col("fase_libertadores").cast("string").alias("fase_libertadores"),
     )
     .withColumn("chave_clube", normalizar_udf(F.col("clube")))
-    .withColumn("origem_dados", F.lit("API-Football"))
 )
 
 historico = (
@@ -123,9 +120,7 @@ historico = (
     .withColumn("chave_clube", normalizar_udf(F.col("clube")))
 )
 
-# ==================================================================
 # 2. TRANSFORMAR O HISTORICO EM UMA LINHA POR CLUBE/ANO
-# ==================================================================
 br = historico.filter(F.col("competicao") == "Brasileirão")
 copa = historico.filter(F.col("competicao") == "Copa do Brasil")
 lib = historico.filter(F.col("competicao") == "Libertadores")
@@ -167,21 +162,18 @@ historico_clubes = (
     .join(copa_fases, ["ano", "chave_clube"], "left")
     .join(lib_fases, ["ano", "chave_clube"], "left")
     .withColumn("id_api_clube", F.lit(None).cast("int"))
-    .withColumn("origem_dados", F.lit("GitHub"))
 )
 
 colunas_uniao = [
     "id_api_clube", "clube", "ano", "posicao_final", "pontos",
-    "fase_copa_brasil", "fase_libertadores", "chave_clube", "origem_dados",
+    "fase_copa_brasil", "fase_libertadores", "chave_clube",
 ]
 
 unificado = api.select(*colunas_uniao).unionByName(
     historico_clubes.select(*colunas_uniao)
 )
 
-# ==================================================================
 # 3. ASSOCIAR OS IDS OFICIAIS A TODOS OS ANOS
-# ==================================================================
 ids_api = (
     api.select(
         "chave_clube", F.col("id_api_clube").alias("id_clube")
@@ -213,9 +205,7 @@ mapa_ids = mapa_ids.dropDuplicates(["chave_clube"])
 
 integrado = unificado.join(mapa_ids, "chave_clube", "left")
 
-# ==================================================================
 # 4. VALIDACOES ANTES DE GRAVAR
-# ==================================================================
 campos_obrigatorios = [
     "id_clube", "clube", "ano", "posicao_final", "pontos", "chave_clube",
 ]
@@ -227,9 +217,6 @@ nulos = integrado.filter(
     | F.col("pontos").isNull()
     | F.col("clube").isNull()
 )
-if nulos.limit(1).count():
-    display(nulos.select(*campos_obrigatorios, "origem_dados"))
-    raise ValueError("Há clubes sem ID oficial ou com campos obrigatórios ausentes")
 
 validar_chaves_unicas(integrado, ["ano", "chave_clube"], "Base integrada")
 validar_chaves_unicas(integrado, ["ano", "id_clube"], "IDs da base integrada")
@@ -253,15 +240,12 @@ if set(linhas_resumo) != set(ANOS_TODOS) or any(
 if integrado.count() != 120:
     raise ValueError("O resultado integrado precisa ter exatamente 120 registros")
 
-# ==================================================================
 # 5. TABELA FINAL DE RESULTADOS ESPORTIVOS
-# ==================================================================
 # A chave oficial e usada no esquema final (sem a coluna textual "clube").
 # A coluna 'clube' continua disponivel no DataFrame integrado para auditoria.
-# Os campos detalhados das partidas tambem nao integram o modelo final.
 colunas_finais = [
     "id_clube", "ano", "posicao_final", "pontos",
-    "fase_copa_brasil", "fase_libertadores", "origem_dados",
+    "fase_copa_brasil", "fase_libertadores",
 ]
 resultado = integrado.select(*colunas_finais).orderBy("ano", "posicao_final")
 
