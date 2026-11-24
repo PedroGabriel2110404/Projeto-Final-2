@@ -218,6 +218,14 @@ nulos = integrado.filter(
     | F.col("clube").isNull()
 )
 
+if nulos.limit(1).count() > 0:
+    display(nulos.select(*campos_obrigatorios))
+    raise ValueError(
+        "Há clubes sem ID oficial ou com campos obrigatórios ausentes"
+    )
+else:
+    print("Validação concluída: nenhum ID nulo ou campo obrigatório ausente.")
+
 validar_chaves_unicas(integrado, ["ano", "chave_clube"], "Base integrada")
 validar_chaves_unicas(integrado, ["ano", "id_clube"], "IDs da base integrada")
 
