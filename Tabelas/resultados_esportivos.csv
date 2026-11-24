@@ -1,0 +1,121 @@
+id_clube,ano,posicao_final,pontos,fase_copa_brasil,fase_libertadores
+121,2022,1,81,Oitavas de final,Semifinal
+119,2022,2,73,Primeira fase,null
+124,2022,3,70,Semifinal,Terceira fase
+131,2022,4,65,Vice-campeão,Quartas de final
+127,2022,5,62,Campeão,Campeão
+134,2022,6,58,Quartas de final,Vice-campeão
+1062,2022,7,58,Oitavas de final,Quartas de final
+154,2022,8,55,Quartas de final,Oitavas de final
+126,2022,9,54,Semifinal,null
+125,2022,10,53,Quartas de final,Fase de grupos
+120,2022,11,53,Oitavas de final,null
+128,2022,12,47,Oitavas de final,null
+151,2022,13,46,Oitavas de final,null
+794,2022,14,44,Terceira fase,Fase de grupos
+147,2022,15,42,Terceira fase,null
+1193,2022,16,41,Terceira fase,null
+129,2022,17,37,Oitavas de final,null
+144,2022,18,36,Quartas de final,null
+145,2022,19,35,Segunda fase,null
+152,2022,20,22,Terceira fase,null
+121,2023,1,70,Quartas de final,Semifinal
+130,2023,2,68,Semifinal,null
+1062,2023,3,66,Oitavas de final,Oitavas de final
+127,2023,4,66,Vice-campeão,Oitavas de final
+120,2023,5,64,Oitavas de final,null
+794,2023,6,62,Segunda fase,null
+124,2023,7,56,Oitavas de final,Campeão
+134,2023,8,56,Quartas de final,Oitavas de final
+119,2023,9,55,Oitavas de final,Semifinal
+154,2023,10,54,Oitavas de final,Terceira fase
+126,2023,11,53,Campeão,null
+1193,2023,12,51,Primeira fase,null
+131,2023,13,50,Semifinal,Fase de grupos
+135,2023,14,47,Oitavas de final,null
+133,2023,15,45,Segunda fase,null
+118,2023,16,44,Quartas de final,null
+128,2023,17,43,Oitavas de final,null
+151,2023,18,38,Segunda fase,null
+147,2023,19,30,Terceira fase,null
+125,2023,20,24,Quartas de final,null
+120,2024,1,79,Oitavas de final,Campeão
+121,2024,2,73,Oitavas de final,Oitavas de final
+127,2024,3,70,Campeão,Quartas de final
+154,2024,4,68,Terceira fase,null
+119,2024,5,65,Terceira fase,null
+126,2024,6,59,Quartas de final,Quartas de final
+131,2024,7,56,Semifinal,null
+118,2024,8,53,Quartas de final,null
+135,2024,9,52,Primeira fase,null
+133,2024,10,50,Semifinal,null
+136,2024,11,47,Terceira fase,null
+1062,2024,12,47,Vice-campeão,Vice-campeão
+124,2024,13,46,Oitavas de final,Quartas de final
+130,2024,14,45,Oitavas de final,Oitavas de final
+152,2024,15,45,Quartas de final,null
+794,2024,16,44,Oitavas de final,Terceira fase
+134,2024,17,42,Quartas de final,null
+140,2024,18,38,Terceira fase,null
+144,2024,19,30,Oitavas de final,null
+1193,2024,20,30,Terceira fase,null
+127,2020,1,71,Quartas de final,Oitavas de final
+119,2020,2,70,Quartas de final,Oitavas de final
+1062,2020,3,68,Segunda fase,null
+126,2020,4,66,Semifinal,Fase de grupos
+124,2020,5,64,Quarta fase,null
+130,2020,6,59,Vice-campeão,Quartas de final
+121,2020,7,58,Campeão,Campeão
+128,2020,8,54,Oitavas de final,Vice-campeão
+134,2020,9,53,Oitavas de final,Oitavas de final
+794,2020,10,53,Oitavas de final,null
+129,2020,11,52,Quartas de final,null
+131,2020,12,51,Oitavas de final,Pré-Libertadores - Fase 2
+144,2020,13,50,Oitavas de final,null
+118,2020,14,44,Primeira fase,null
+123,2020,15,42,Primeira fase,null
+154,2020,16,41,Oitavas de final,null
+133,2020,17,41,Quarta fase,null
+151,2020,18,37,Terceira fase,null
+147,2020,19,31,Primeira fase,null
+120,2020,20,27,Oitavas de final,null
+1062,2021,1,84,Campeão,Semifinal
+127,2021,2,71,Semifinal,Vice-campeão
+121,2021,3,66,Terceira fase,Campeão
+154,2021,4,58,Semifinal,null
+131,2021,5,57,Terceira fase,null
+794,2021,6,56,Terceira fase,null
+124,2021,7,54,Quartas de final,Quartas de final
+125,2021,8,53,Terceira fase,null
+144,2021,9,53,Oitavas de final,null
+128,2021,10,50,Quartas de final,Fase de grupos
+129,2021,11,50,Terceira fase,null
+119,2021,12,48,Terceira fase,Oitavas de final
+126,2021,13,48,Quartas de final,Quartas de final
+134,2021,14,47,Vice-campeão,null
+1193,2021,15,47,Segunda fase,null
+152,2021,16,46,Segunda fase,null
+130,2021,17,43,Quartas de final,Pré-Libertadores - Fase 3
+118,2021,18,43,Oitavas de final,null
+123,2021,19,38,Primeira fase,null
+132,2021,20,15,Terceira fase,null
+127,2025,1,79,Oitavas de final,Campeão
+121,2025,2,76,Oitavas de final,Vice-campeão
+135,2025,3,70,Semifinal,null
+7848,2025,4,67,null,null
+124,2025,5,64,Semifinal,null
+120,2025,6,63,Quartas de final,Oitavas de final
+118,2025,7,60,Quartas de final,Fase de grupos
+126,2025,8,51,Oitavas de final,Quartas de final
+130,2025,9,49,Terceira fase,null
+794,2025,10,48,Oitavas de final,null
+1062,2025,11,48,Quartas de final,null
+128,2025,12,47,Terceira fase,null
+131,2025,13,47,Campeão,Pré-Libertadores - Fase 3
+133,2025,14,45,Vice-campeão,null
+136,2025,15,45,Segunda fase,null
+119,2025,16,44,Oitavas de final,Oitavas de final
+129,2025,17,43,Terceira fase,null
+154,2025,18,43,Terceira fase,Oitavas de final
+152,2025,19,35,Primeira fase,null
+123,2025,20,17,Primeira fase,null

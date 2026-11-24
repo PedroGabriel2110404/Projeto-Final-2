@@ -1,0 +1,121 @@
+id_clube,ano,virou_saf,tipo_controle,data_entrada_saf,data_troca_controle
+118,2020,false,Associacao (nao SAF),null,null
+119,2020,false,Associacao (nao SAF),null,null
+120,2020,false,Associacao (nao SAF),null,null
+121,2020,false,Associacao (nao SAF),null,null
+123,2020,false,Associacao (nao SAF),null,null
+124,2020,false,Associacao (nao SAF),null,null
+126,2020,false,Associacao (nao SAF),null,null
+127,2020,false,Associacao (nao SAF),null,null
+128,2020,false,Associacao (nao SAF),null,null
+129,2020,false,Associacao (nao SAF),null,null
+130,2020,false,Associacao (nao SAF),null,null
+131,2020,false,Associacao (nao SAF),null,null
+133,2020,false,Associacao (nao SAF),null,null
+134,2020,false,Associacao (nao SAF),null,null
+144,2020,false,Associacao (nao SAF),null,null
+147,2020,false,Associacao (nao SAF),null,null
+151,2020,false,Associacao (nao SAF),null,null
+154,2020,false,Associacao (nao SAF),null,null
+794,2020,false,Empresa privada (nao SAF),null,null
+1062,2020,false,Associacao (nao SAF),null,null
+118,2021,false,Associacao (nao SAF),null,null
+119,2021,false,Associacao (nao SAF),null,null
+121,2021,false,Associacao (nao SAF),null,null
+123,2021,false,Associacao (nao SAF),null,null
+124,2021,false,Associacao (nao SAF),null,null
+125,2021,false,Associacao (nao SAF),null,null
+126,2021,false,Associacao (nao SAF),null,null
+127,2021,false,Associacao (nao SAF),null,null
+128,2021,false,Associacao (nao SAF),null,null
+129,2021,false,Associacao (nao SAF),null,null
+130,2021,false,Associacao (nao SAF),null,null
+131,2021,false,Associacao (nao SAF),null,null
+132,2021,false,Associacao (nao SAF),null,null
+134,2021,false,Associacao (nao SAF),null,null
+144,2021,false,Associacao (nao SAF),null,null
+152,2021,false,Associacao (nao SAF),null,null
+154,2021,false,Associacao (nao SAF),null,null
+794,2021,false,Empresa privada (nao SAF),null,null
+1062,2021,false,Associacao (nao SAF),null,null
+1193,2021,true,SAF - familia,2021-12-14,null
+119,2022,false,Associacao (nao SAF),null,null
+120,2022,true,SAF - investidor,2022-03-11,2022-03-11
+121,2022,false,Associacao (nao SAF),null,null
+124,2022,false,Associacao (nao SAF),null,null
+126,2022,false,Associacao (nao SAF),null,null
+127,2022,false,Associacao (nao SAF),null,null
+128,2022,false,Associacao (nao SAF),null,null
+129,2022,false,Associacao (nao SAF),null,null
+131,2022,false,Associacao (nao SAF),null,null
+134,2022,false,Associacao (nao SAF),null,null
+144,2022,false,Associacao (SAF juridica em transicao),null,null
+145,2022,false,Associacao (nao SAF),null,null
+147,2022,false,Associacao (SAF juridica em transicao),null,null
+151,2022,false,Associacao (nao SAF),null,null
+152,2022,false,Associacao (nao SAF),null,null
+154,2022,false,Associacao (nao SAF),null,null
+794,2022,false,Empresa privada (nao SAF),null,null
+1062,2022,false,Associacao (nao SAF),null,null
+1193,2022,true,SAF - familia,2021-12-14,null
+118,2023,true,SAF - investidor,2023-05-04,2023-05-04
+119,2023,false,Associacao (nao SAF),null,null
+120,2023,true,SAF - investidor,2022-03-11,null
+121,2023,false,Associacao (nao SAF),null,null
+124,2023,false,Associacao (nao SAF),null,null
+126,2023,false,Associacao (nao SAF),null,null
+127,2023,false,Associacao (nao SAF),null,null
+128,2023,false,Associacao (nao SAF),null,null
+130,2023,false,Associacao (nao SAF),null,null
+131,2023,false,Associacao (nao SAF),null,null
+133,2023,true,SAF - investidor,2022-09-02,null
+134,2023,false,Associacao (nao SAF),null,null
+135,2023,true,SAF - investidor,2022-04-08,null
+147,2023,true,SAF - investidor,2023-10-18,2023-10-18
+151,2023,false,Associacao (nao SAF),null,null
+154,2023,false,Associacao (nao SAF),null,null
+794,2023,false,Empresa privada (nao SAF),null,null
+1062,2023,true,SAF - investidor,2023-11-01,2023-11-01
+1193,2023,true,SAF - familia,2021-12-14,null
+118,2024,true,SAF - investidor,2023-05-04,null
+119,2024,false,Associacao (nao SAF),null,null
+120,2024,true,SAF - investidor,2022-03-11,null
+121,2024,false,Associacao (nao SAF),null,null
+124,2024,false,Associacao (nao SAF),null,null
+126,2024,false,Associacao (nao SAF),null,null
+127,2024,false,Associacao (nao SAF),null,null
+130,2024,false,Associacao (nao SAF),null,null
+131,2024,false,Associacao (nao SAF),null,null
+133,2024,true,SAF - associacao por decisao judicial,2022-09-02,2024-05-15
+134,2024,false,Associacao (nao SAF),null,null
+135,2024,true,SAF - investidor,2022-04-08,2024-04-29
+136,2024,false,Associacao (nao SAF),null,null
+140,2024,false,Associacao (nao SAF),null,null
+144,2024,true,SAF - associacao,2024-06-14,null
+152,2024,false,Associacao (nao SAF),null,null
+154,2024,true,SAF - associacao,2024-08-02,null
+794,2024,false,Empresa privada (nao SAF),null,null
+1062,2024,true,SAF - investidor,2023-11-01,null
+1193,2024,true,SAF - familia,2021-12-14,null
+118,2025,true,SAF - investidor,2023-05-04,null
+119,2025,false,Associacao (nao SAF),null,null
+120,2025,true,SAF - investidor,2022-03-11,null
+121,2025,false,Associacao (nao SAF),null,null
+123,2025,false,Associacao (nao SAF),null,null
+124,2025,false,Associacao (nao SAF),null,null
+126,2025,false,Associacao (nao SAF),null,null
+127,2025,false,Associacao (nao SAF),null,null
+128,2025,false,Associacao (nao SAF),null,null
+129,2025,false,Associacao (nao SAF),null,null
+130,2025,false,Associacao (nao SAF),null,null
+131,2025,false,Associacao (nao SAF),null,null
+133,2025,true,SAF - associacao por decisao judicial,2022-09-02,null
+135,2025,true,SAF - investidor,2022-04-08,null
+136,2025,false,Associacao (nao SAF),null,null
+152,2025,false,Associacao (nao SAF),null,null
+154,2025,true,SAF - associacao,2024-08-02,null
+794,2025,false,Empresa privada (nao SAF),null,null
+1062,2025,true,SAF - investidor,2023-11-01,null
+7848,2025,false,Associacao (nao SAF),null,null
+125,2022,true,SAF - associacao,2022-01-05,null
+125,2023,true,SAF - associacao,2022-01-05,null
