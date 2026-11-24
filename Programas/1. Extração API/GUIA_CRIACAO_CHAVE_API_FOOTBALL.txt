@@ -1,0 +1,77 @@
+GUIA DE CRIAÇÃO E CONFIGURAÇÃO DA CHAVE API-FOOTBALL
+=======================================================
+
+Objetivo
+--------
+Este guia explica como obter uma chave da API-Football (API-Sports), testar
+seu acesso e configurar os scripts de extração de dados esportivos do projeto.
+
+1. CRIAR A CONTA
+----------------
+1) Acesse: https://dashboard.api-football.com/register
+2) Cadastre-se com nome, e-mail e senha ou utilize a opção de cadastro
+   com o Google, se disponível.
+3) Abra o e-mail de confirmação enviado pela plataforma e confirme a conta.
+4) Faça login em: https://dashboard.api-football.com/
+5) O cadastro normalmente disponibiliza automaticamente o plano gratuito.
+   Em novembro de 2026, a documentação oficial indica 100 requisições/dia
+   nesse plano; consulte os limites atualizados no dashboard.
+
+2. LOCALIZAR OU REGERAR A CHAVE
+-------------------------------
+1) No dashboard, acesse o menu lateral Account > My Access.
+2) Localize o campo API Key, revele a chave quando necessário e copie-a.
+3) Guarde a chave em local privado. Ela funciona como credencial de acesso.
+4) Se a chave tiver sido publicada, compartilhada ou exposta, utilize a
+   opção de regenerá-la na mesma área. A chave anterior pode deixar de funcionar.
+
+3. CONFERIR O ACESSO PELO LIVE API TESTER
+----------------------------------------
+1) No dashboard, abra o testador interativo da API-Football (Live API Tester).
+   A posição do atalho pode variar conforme a versão da interface.
+2) Selecione o endpoint "standings".
+3) Informe os parâmetros:
+      league = 71
+      season = 2024
+4) Deixe os demais filtros vazios e execute a consulta.
+5) Confira a resposta JSON:
+      errors: vazio => nenhuma falha informada pela API;
+      results > 0 e response preenchido => dados retornados.
+6) Para testar o endpoint "fixtures", use os mesmos parâmetros e deixe
+   "date" em branco. Uma data de 2026 junto da temporada de 2024 pode
+   retornar zero partidas sem representar falha de autenticação.
+
+Observação: a disponibilidade de temporadas históricas depende do plano.
+O sucesso do teste de 2024 não garante acesso a todos os anos de 2020–2025.
+
+4. CONFIGURAR A CHAVE NO PYTHON / DATABRICKS
+-------------------------------------------
+
+Execute o código presente do arquivo 1.1 Verificação_API
+
+ATENÇÃO: o Secret Scope e a chave acima são apenas nomes de exemplo.
+É necessário criá-los e configurá-los no workspace antes da execução.
+Outra alternativa é ler a chave de uma variável de ambiente privada.
+
+5. SOLUÇÃO DE PROBLEMAS
+----------------------
+- "Error/Missing application key": verifique se a chave foi realmente
+  preenchida e enviada no cabeçalho "x-apisports-key".
+- HTTP 403: examine a resposta detalhada da API antes de concluir a causa;
+  pode haver restrição da credencial, do plano ou da origem da requisição.
+- "results: 0" com "errors" vazio: revise os filtros, principalmente
+  "date", "season" e "league".
+- Uma consulta funciona no Live Tester, mas falha no Databricks:
+  confirme se o notebook está usando a mesma chave atual e confira
+  possíveis restrições de rede, permissões e limites de requisições.
+- Nunca publique capturas de tela mostrando a chave nem suba notebooks
+  que a contenham para um repositório público.
+
+6. LINKS OFICIAIS
+-----------------
+Cadastro: https://dashboard.api-football.com/register
+Dashboard: https://dashboard.api-football.com/
+Documentação: https://www.api-football.com/documentation-v3
+Guia de início da API-Football:
+https://www.api-football.com/news/post/how-to-get-started-with-api-football-the-complete-beginners-guide
+Planos e limites: https://www.api-football.com/pricing/
